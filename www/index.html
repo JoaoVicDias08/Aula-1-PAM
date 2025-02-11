@@ -12,7 +12,73 @@
     </script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+
+    <input type="text" placeholder="Insira o primeiro valor" id="valor01">
+    <input type="text" placeholder="Insira o segundo valor" id="valor02">
+
+    <input type="button"  value ="SOMAR" id="BtnSomar" onclick="calcular()">
+
+    <h1 id="resultado"></h1>
+    
 </body>
+
+<script> 
+
+  var valor01, valor02, resultado
+
+function somar () { 
+
+  valor01 = parseInt(document.getElementById("valor01").value)
+  valor02 = parseInt(document.getElementById("valor02").value)
+
+  resultado = valor01 + valor02
+
+  document.getElementById('resultado').innerHTML = resultado
+
+}
+
+function multiplicar () { 
+
+  valor01 = parseInt(document.getElementById("valor01").value)
+  valor02 = parseInt(document.getElementById("valor02").value)
+
+  resultado = valor01 * valor02
+
+  document.getElementById('resultado').innerHTML = resultado
+
+}
+
+function sutrair () { 
+
+  valor01 = parseInt(document.getElementById("valor01").value)
+  valor02 = parseInt(document.getElementById("valor02").value)
+
+  resultado = valor01 - valor02
+
+  document.getElementById('resultado').innerHTML = resultado
+
+}
+
+function dividir () { 
+
+  valor01 = parseInt(document.getElementById("valor01").value)
+  valor02 = parseInt(document.getElementById("valor02").value)
+
+  resultado = valor01 / valor02
+
+  document.getElementById('resultado').innerHTML = resultado
+
+}
+
+function exponenciar () { 
+
+  valor01 = parseInt(document.getElementById("valor01").value)
+  valor02 = parseInt(document.getElementById("valor02").value)
+
+  resultado = valor01 ** valor02
+
+  document.getElementById('resultado').innerHTML = resultado
+
+}
+</script>
 </html>
